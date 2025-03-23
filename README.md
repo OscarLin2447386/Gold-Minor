@@ -30,25 +30,42 @@ Designed as a solo project for **portfolio showcase** and **technical interview 
 
 ## Project Structure
 
-GoldMiner/
-├── GoldMiner.sln               # Visual Studio solution file
-├── preview/                    # Screenshots for README
-├── .vs/                        # Visual Studio config (ignored)
-├── Debug/                      # Build output (ignored)
-├── x64/                        # Build output (ignored)
-├── assets/                     # Game assets
-│   ├── images/                 # Image resources (optional)
-│   └── *.mp3                   # Sound effects and background music
-├── src/                        # Source code
-│   ├── main.cpp                # Game entry point
-│   ├── tools.cpp / tools.h     # Utility functions (e.g., UI helpers, math)
-│   └── userdata.cpp / userdata.h # User data handling (login, leaderboard)
-├── font/                       # Custom fonts used in UI
-├── EasyText/                   # EasyX support or config files
-├── GoldMiner.vcxproj           # Visual Studio project file
-├── GoldMiner.vcxproj.filters   # VS filters (folders in Solution Explorer)
-└── GoldMiner.vcxproj.user      # User-specific settings (ignored)
+```bash
 
+├── .gitignore                   # Git ignore rules
+├── LICENSE                      # License file
+├── README.md                    # Project documentation
+├── UpgradeLog.htm               # VS upgrade log (optional)
+├── goldMiner.sln                # Visual Studio solution
+├── goldMiner/                   # Main project directory
+│   ├── assets/                  # Game assets (images, sounds)
+│   ├── Debug/                   # Build output (ignored)
+│   ├── x64/                     # Build output (ignored)
+│   ├── EasyText.h               # EasyX config header
+│   ├── font.ttf                 # Custom font file
+│   ├── gameExplain.mp3          # Sound - instructions
+│   ├── gameLogin.mp3            # Sound - login screen
+│   ├── gameMenu.mp3             # Sound - main menu
+│   ├── gameRank.mp3             # Sound - leaderboard
+│   ├── gameSkin.mp3             # Sound - skin/theme
+│   ├── main.cpp                 # Game entry point
+│   ├── tools.h                  # Utility functions
+│   ├── userdata.txt             # Persistent user data (scores etc.)
+│   ├── 黄金矿工.vcxproj           # Visual Studio project file
+│   ├── 黄金矿工.vcxproj.filters   # VS project filters
+│   └── 黄金矿工.vcxproj.user      # VS user-specific config
+├── preview/                     # Screenshots for README
+│   ├── instruction.png
+│   ├── leaderboard.png
+│   ├── login.png
+│   ├── menu.png
+│   ├── setting.png
+│   ├── success.png
+│   └── theme.png
+├── Setup1/                      # Installer or setup files (optional)
+└── x64/                         # Build output (redundant with inner x64/)
+
+```
 
 
 
