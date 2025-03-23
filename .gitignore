@@ -1,0 +1,15 @@
+*.exe
+*.obj
+*.log
+*.pdb
+*.sdf
+*.ipch
+*.opensdf
+*.VC.db
+*.user
+*.cache
+*.ilk
+Debug/
+x64/
+.vs/
+UpgradeLog.*
